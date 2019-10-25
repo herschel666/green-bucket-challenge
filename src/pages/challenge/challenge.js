@@ -5,16 +5,17 @@ import Button from '@material-ui/core/Button';
 
 import { Center } from '../../components/center/center';
 
-import styles from './group-action.module.css';
+import styles from './challenge.module.css';
 
-export const GroupAction = () => {
+export const Challenge = () => {
   const history = useHistory();
   const handleSubmit = () => history.push('/challenge');
 
   return (
     <Container>
       <form onSubmit={handleSubmit}>
-        <Center justifyContent="space-evenly">
+        <Center justifyContent="center">
+          <h1 className={styles.heading}>Start a challenge!</h1>
           <Button
             variant="outlined"
             color="primary"
@@ -23,17 +24,27 @@ export const GroupAction = () => {
             type="submit"
             classes={{ root: styles.button }}
           >
-            Start a Team
+            No meat this week!
           </Button>
           <Button
             variant="outlined"
             color="primary"
             fullWidth={true}
             size="large"
-            type="submit"
+            type="button"
             classes={{ root: styles.button }}
           >
-            Join a Team
+            No car rides this week
+          </Button>
+          <Button
+            variant="outlined"
+            color="primary"
+            fullWidth={true}
+            size="large"
+            type="button"
+            classes={{ root: styles.button }}
+          >
+            &hellip;
           </Button>
         </Center>
       </form>

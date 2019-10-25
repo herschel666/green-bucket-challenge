@@ -1,0 +1,13 @@
+.wrap {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.spaceEvenly {
+  justify-content: space-evenly;
+}
+
+.center {
+  justify-content: center;
+}

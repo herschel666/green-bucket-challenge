@@ -1,0 +1,10 @@
+.heading {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+/* MUI's own CSS has has a slightly higher specificity... */
+.button.button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
