@@ -1,6 +1,12 @@
 .buttonWrapper {
-  height: calc(100vh - 4rem);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+/* MUI's own CSS has has a slightly higher specificity... */
+.button.button {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }

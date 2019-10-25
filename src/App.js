@@ -5,15 +5,15 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom';
-import enTranslations from '@shopify/polaris/locales/en.json';
-import { AppProvider } from '@shopify/polaris';
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 import { Login } from './pages/login/login';
 import { GroupAction } from './pages/group-action/group-action';
 
 function App() {
   return (
-    <AppProvider i18n={enTranslations}>
+    <>
+      <CssBaseline />
       <Router>
         <Switch>
           <Route path="/login" exact={true} component={Login} />
@@ -21,7 +21,7 @@ function App() {
           <Redirect from="/" to="/login" exact={true} />
         </Switch>
       </Router>
-    </AppProvider>
+    </>
   );
 }
 

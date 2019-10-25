@@ -1,6 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { Page, Layout, Form, FormLayout, Button } from '@shopify/polaris';
+import Container from '@material-ui/core/Container';
+import Button from '@material-ui/core/Button';
 
 import styles from './group-action.module.css';
 
@@ -9,23 +10,31 @@ export const GroupAction = () => {
   const handleSubmit = () => history.push('/challenge');
 
   return (
-    <Page>
-      <Layout>
-        <Layout.Section>
-          <Form onSubmit={handleSubmit}>
-            <FormLayout>
-              <div className={styles.buttonWrapper}>
-                <Button fullWidth={true} size="large" submit={true}>
-                  Start a Team
-                </Button>
-                <Button fullWidth={true} size="large" submit={true}>
-                  Join a Team
-                </Button>
-              </div>
-            </FormLayout>
-          </Form>
-        </Layout.Section>
-      </Layout>
-    </Page>
+    <Container>
+      <form onSubmit={handleSubmit}>
+        <div className={styles.buttonWrapper}>
+          <Button
+            variant="outlined"
+            color="primary"
+            fullWidth={true}
+            size="large"
+            type="submit"
+            classes={{ root: styles.button }}
+          >
+            Start a Team
+          </Button>
+          <Button
+            variant="outlined"
+            color="primary"
+            fullWidth={true}
+            size="large"
+            type="submit"
+            classes={{ root: styles.button }}
+          >
+            Join a Team
+          </Button>
+        </div>
+      </form>
+    </Container>
   );
 };
