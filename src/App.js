@@ -9,6 +9,7 @@ import enTranslations from '@shopify/polaris/locales/en.json';
 import { AppProvider } from '@shopify/polaris';
 
 import { Login } from './pages/login/login';
+import { GroupAction } from './pages/group-action/group-action';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/login" exact={true} component={Login} />
+          <Route path="/group-action" exact={true} component={GroupAction} />
           <Redirect from="/" to="/login" exact={true} />
         </Switch>
       </Router>

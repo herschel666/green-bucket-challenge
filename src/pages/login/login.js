@@ -21,7 +21,7 @@ export const Login = () => {
             <FormLayout>
               <TextField label="Username" onChange={() => {}} />
               <TextField type="password" label="Password" onChange={() => {}} />
-              <Button submit>Submit</Button>
+              <Button submit={true}>Submit</Button>
             </FormLayout>
           </Form>
         </Layout.Section>
