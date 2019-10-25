@@ -16,7 +16,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/login" exact={true} component={Login} />
-          <Redirect from="/" to="/login" />
+          <Redirect from="/" to="/login" exact={true} />
         </Switch>
       </Router>
     </AppProvider>
