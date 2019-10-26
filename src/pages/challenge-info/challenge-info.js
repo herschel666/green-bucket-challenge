@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
@@ -10,6 +11,9 @@ import styles from './challenge-info.module.css';
 
 export const ChallengeInfo = ({ location }) => {
   const params = new URLSearchParams(location.search);
+  const history = useHistory();
+  const navigate = () =>
+    history.push(`/challenge/no-meat/${params.get('day')}`);
 
   return (
     <Container>
@@ -29,7 +33,7 @@ export const ChallengeInfo = ({ location }) => {
           color="primary"
           fullWidth={true}
           size="large"
-          href={`/challenge/no-meat/${params.get('day')}`}
+          onClick={navigate}
           classes={{ root: styles.button }}
         >
           back
