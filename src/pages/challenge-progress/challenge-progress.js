@@ -31,9 +31,7 @@ export const ChallengeProgress = ({ match }) => {
       <Center justifyContent="space-around">
         <h1 className={styles.heading}>No meat this week!</h1>
         <h2 className={styles.subHeading}>Day {match.params.day} of 7</h2>
-        <div className={styles.graph}>
-          <img src={graphs[match.params.day]} width="100%" />
-        </div>
+        <img src={graphs[match.params.day]} alt="" className={styles.graph} />
         <div>
           <Button
             variant="outlined"

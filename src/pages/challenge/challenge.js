@@ -44,7 +44,12 @@ export const Challenge = () => {
         >
           &hellip;
         </Button>
-        <img className={styles.paddedImage} src={challengeFootprint} width="100%" />
+        <img
+          className={styles.paddedImage}
+          src={challengeFootprint}
+          width="100%"
+          alt=""
+        />
       </Center>
     </Container>
   );
