@@ -15,6 +15,7 @@ import { Challenge } from './pages/challenge/challenge';
 import { ChallengeDetail } from './pages/challenge-detail/challenge-detail';
 import { ChallengeProgress } from './pages/challenge-progress/challenge-progress';
 import { ChallengeInfo } from './pages/challenge-info/challenge-info';
+import { ChallengeCheck } from './pages/challenge-check/challenge-check';
 
 function App() {
   return (
@@ -49,6 +50,11 @@ function App() {
             path="/challenge/no-meat/:day"
             exact={true}
             component={ChallengeProgress}
+          />
+          <Route
+            path="/challenge/no-meat/:day/check"
+            exact={true}
+            component={ChallengeCheck}
           />
           <Redirect from="/" to="/login" exact={true} />
         </Switch>

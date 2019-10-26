@@ -1,0 +1,34 @@
+.heading,
+.subHeading {
+  text-align: center;
+}
+
+.subHeading {
+  margin-bottom: 2rem;
+}
+
+.subHeadingHighlight {
+  margin-top: 4rem;
+  font-size: 1.5rem;
+}
+
+/* MUI's own CSS has has a slightly higher specificity... */
+.successButton.successButton {
+  margin: 0.5rem auto;
+  font-size: 1.25rem;
+}
+
+.failure {
+  margin: 1rem 0;
+}
+
+.failureRow {
+  margin: 0.75rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* MUI's own CSS has has a slightly higher specificity... */
+.failureButton.failureButton {
+  width: 48%;
+}
