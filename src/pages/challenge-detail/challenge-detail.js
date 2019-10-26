@@ -24,7 +24,7 @@ export const ChallengeDetail = () => {
         </Typography>
         <img className={styles.centerImage} src={infoEquals} alt="Comparision of Meat and Car drive CO2 Emissions" width="300px" />
         <Typography component="p" align="center" paragraph={true}>
-        1kg Meat requires up to 20.000L freshwater and during the production 11kg CO₂eq are emitted.
+        1kg Meat requires up to 20.000L freshwater and during the production 12kg CO₂eq are emitted.
         </Typography>
         <img className={styles.centerImage} src={infoBreakdown} alt="Breakdown of Food Emissions" width="100%" />
         <Button

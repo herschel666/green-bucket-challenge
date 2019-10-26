@@ -5,6 +5,9 @@
 
 .centerImage {
   margin: 0 auto;
+  padding: 1rem;
+  border: 1px #26A69A solid;
+  border-radius: 5px;
 }
 
 /* MUI's own CSS has has a slightly higher specificity... */

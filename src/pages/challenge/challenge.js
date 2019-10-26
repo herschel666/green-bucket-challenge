@@ -2,6 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import Container from '@material-ui/core/Container';
 import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 
 import { Center } from '../../components/center/center';
 
@@ -15,7 +16,12 @@ export const Challenge = () => {
   return (
     <Container>
       <Center justifyContent="center">
-        <h1 className={styles.heading}>Start a challenge!</h1>
+        <h1 className={styles.heading}>Choose a challenge!</h1>
+        <Typography component="p" align="center" paragraph={true}>
+          Team Altonaer Wasserratten
+          <br />
+          <b>Lisa · Anna · Tim</b>
+        </Typography>
         <Button
           variant="outlined"
           color="primary"
@@ -35,21 +41,13 @@ export const Challenge = () => {
         >
           No car rides this week
         </Button>
-        <Button
-          variant="outlined"
-          color="primary"
-          fullWidth={true}
-          size="large"
-          classes={{ root: styles.button }}
-        >
-          &hellip;
-        </Button>
+        <div className={styles.paddedImage}>
         <img
-          className={styles.paddedImage}
           src={challengeFootprint}
           width="100%"
           alt=""
         />
+        </div>
       </Center>
     </Container>
   );

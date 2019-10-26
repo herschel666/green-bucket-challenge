@@ -12,7 +12,7 @@ import styles from './challenge-result.module.css';
 
 export const ChallengeResult = ({ day, success }) => {
   const proceedUrl =
-    day === '7'
+    day === '3'
       ? '/challenge/no-meat/finish'
       : `/challenge/no-meat/${Number(day) + 1}`;
   const history = useHistory();
@@ -26,9 +26,9 @@ export const ChallengeResult = ({ day, success }) => {
   const emoji = success ? '🚀' : '👻';
   const heading = success ? 'Awesome' : 'Not your day';
   const text = success
-    ? 'You saved 800g CO2 today! (in comparison to the average Hamburg person)'
+    ? 'You saved 800g CO2 today!'
     : 'You probably found good reasons, but the challenge is not to eat any meat! Try harder tomorrow.';
-  const proceedLabel = success ? `I'm sustainable` : 'Sorry';
+  const proceedLabel = success ? `Great!` : 'Okay';
 
   return (
     <Container>
@@ -36,7 +36,7 @@ export const ChallengeResult = ({ day, success }) => {
         <span className={styles.emoji} role="img">
           {emoji}
         </span>
-        <h1 className={styles.heading}>{heading}!</h1>
+        <h1 className={styles.heading}>{heading}</h1>
         <Typography component="p" align="center" paragraph={true}>
           {text}
         </Typography>
@@ -49,7 +49,7 @@ export const ChallengeResult = ({ day, success }) => {
             onClick={navigateToNextDay}
             classes={{ root: classNames(styles.button, styles.buttonProceed) }}
           >
-            {proceedLabel}!
+            {proceedLabel}
           </Button>
           <Button
             variant="outlined"

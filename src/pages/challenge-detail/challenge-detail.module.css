@@ -4,6 +4,9 @@
 
 .centerImage {
   margin: 0 auto;
+  padding: 1rem;
+  border: 1px #26A69A solid;
+  border-radius: 5px;
 }
 
 .bubble {
