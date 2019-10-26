@@ -14,6 +14,7 @@ import { GroupAction } from './pages/group-action/group-action';
 import { Challenge } from './pages/challenge/challenge';
 import { ChallengeDetail } from './pages/challenge-detail/challenge-detail';
 import { ChallengeProgress } from './pages/challenge-progress/challenge-progress';
+import { ChallengeInfo } from './pages/challenge-info/challenge-info';
 
 function App() {
   return (
@@ -38,6 +39,11 @@ function App() {
             path="/challenge/no-meat"
             exact={true}
             component={ChallengeDetail}
+          />
+          <Route
+            path="/challenge/no-meat/info"
+            exact={true}
+            component={ChallengeInfo}
           />
           <Route
             path="/challenge/no-meat/:day"

@@ -1,0 +1,13 @@
+.heading,
+.subHeading {
+  text-align: center;
+}
+
+.subHeading {
+  margin-bottom: 2rem;
+}
+
+/* MUI's own CSS has has a slightly higher specificity... */
+.button.button {
+  margin: 0.5rem 0;
+}
