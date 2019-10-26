@@ -8,6 +8,7 @@ export const Center = ({ justifyContent, children }) => (
   <div
     className={classNames(styles.wrap, {
       [styles.spaceEvenly]: justifyContent === 'space-evenly',
+      [styles.spaceAround]: justifyContent === 'space-around',
       [styles.center]: justifyContent === 'center',
     })}
   >
@@ -16,5 +17,6 @@ export const Center = ({ justifyContent, children }) => (
 );
 
 Center.propTypes = {
-  justifyContent: PropTypes.oneOf(['space-evenly', 'center']).isRequired,
+  justifyContent: PropTypes.oneOf(['space-evenly', 'space-around', 'center'])
+    .isRequired,
 };

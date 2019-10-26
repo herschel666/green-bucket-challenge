@@ -1,0 +1,42 @@
+.heading {
+  text-align: center;
+}
+
+.bubble {
+  position: relative;
+  width: 65%;
+  height: 0;
+  overflow: hidden;
+  margin: 2rem auto;
+  padding-top: 65%;
+}
+
+.bubbleInner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 80%;
+  background-color: var(--grey-300);
+}
+
+.name {
+  position: absolute;
+  font-size: 1.25rem;
+}
+
+.nameOne {
+  left: 25%;
+  top: 15%;
+}
+
+.nameTwo {
+  left: 65%;
+  top: 40%;
+}
+
+.nameThree {
+  left: 30%;
+  top: 60%;
+}
