@@ -13,6 +13,7 @@ import { Login } from './pages/login/login';
 import { GroupAction } from './pages/group-action/group-action';
 import { Challenge } from './pages/challenge/challenge';
 import { ChallengeDetail } from './pages/challenge-detail/challenge-detail';
+import { ChallengeProgress } from './pages/challenge-progress/challenge-progress';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           {`
             :root {
               --grey-300: ${grey['300']};
+              --grey-600: ${grey['600']};
             }
           `}
         </style>
@@ -36,6 +38,11 @@ function App() {
             path="/challenge/no-meat"
             exact={true}
             component={ChallengeDetail}
+          />
+          <Route
+            path="/challenge/no-meat/:day"
+            exact={true}
+            component={ChallengeProgress}
           />
           <Redirect from="/" to="/login" exact={true} />
         </Switch>

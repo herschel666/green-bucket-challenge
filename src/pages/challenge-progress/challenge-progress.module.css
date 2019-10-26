@@ -1,0 +1,36 @@
+.heading,
+.subHeading {
+  text-align: center;
+}
+
+.subHeading {
+  margin-bottom: 2rem;
+}
+
+.graph {
+  position: relative;
+  width: 90%;
+  height: 0;
+  overflow: hidden;
+  padding-top: 90%;
+  margin: 1rem auto;
+  background-color: var(--grey-300);
+}
+
+.graph::before {
+  display: block;
+  content: 'Insert Graph Here…!';
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+/* MUI's own CSS has has a slightly higher specificity... */
+.button.button {
+  margin: 0.5rem 0;
+}
+
+/* MUI's own CSS has has a slightly higher specificity... */
+.buttonInfo.buttonInfo {
+  color: var(--grey-600);
+}

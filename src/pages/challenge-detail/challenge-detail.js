@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
 import { Center } from '../../components/center/center';
+
 import styles from './challenge-detail.module.css';
 
 export const ChallengeDetail = () => (
