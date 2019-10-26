@@ -3,6 +3,10 @@
   margin-bottom: 5rem;
 }
 
+.paddedImage {
+  padding: 1rem;
+}
+
 /* MUI's own CSS has has a slightly higher specificity... */
 .button.button {
   margin-top: 1rem;

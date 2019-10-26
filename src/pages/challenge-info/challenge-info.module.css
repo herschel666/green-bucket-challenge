@@ -3,8 +3,8 @@
   text-align: center;
 }
 
-.subHeading {
-  margin-bottom: 2rem;
+.centerImage {
+  margin: 0 auto;
 }
 
 /* MUI's own CSS has has a slightly higher specificity... */

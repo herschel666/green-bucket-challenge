@@ -5,6 +5,7 @@ import Button from '@material-ui/core/Button';
 
 import { Center } from '../../components/center/center';
 
+import challengeFootprint from '../../assets/challengeFootprint.png';
 import styles from './challenge.module.css';
 
 export const Challenge = () => {
@@ -43,6 +44,7 @@ export const Challenge = () => {
         >
           &hellip;
         </Button>
+        <img className={styles.paddedImage} src={challengeFootprint} width="100%" />
       </Center>
     </Container>
   );

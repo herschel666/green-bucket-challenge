@@ -7,6 +7,8 @@ import Button from '@material-ui/core/Button';
 
 import { Center } from '../../components/center/center';
 
+import infoEquals from '../../assets/infoEquals.png';
+import infoBreakdown from '../../assets/infoBreakdown.png';
 import styles from './challenge-info.module.css';
 
 const getBackUrl = (params) => {
@@ -39,15 +41,15 @@ export const ChallengeInfo = ({ location }) => {
     <Container>
       <Center justifyContent="space-around">
         <h1 className={styles.heading}>No meat this week!</h1>
-        <h2 className={styles.subHeading}>
-          Eat no fish, no beef, no chicken for a week!
-        </h2>
         <Typography component="p" align="center" paragraph={true}>
-          Meat is the largest part of CO2 emissions of our food. By not eating
-          meat for a week, your carbon footprint would be reduced by 20% (500g
-          CO2-eq).
+          Meat is the largest source of CO₂ in our daily diet.
+          By not eating meat for a week, you can save up to 12kg CO₂eq.
         </Typography>
-        {/* TODO: Add meat graph here... */}
+        <img className={styles.centerImage} src={infoEquals} alt="Comparision of Meat and Car drive CO2 Emissions" width="300px" />
+        <Typography component="p" align="center" paragraph={true}>
+        1kg Meat requires up to 20.000L freshwater and during the production 11kg CO₂eq are emitted.
+        </Typography>
+        <img className={styles.centerImage} src={infoBreakdown} alt="Breakdown of Food Emissions" width="100%" />
         <Button
           variant="outlined"
           color="primary"

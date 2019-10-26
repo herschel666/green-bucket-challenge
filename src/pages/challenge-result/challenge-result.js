@@ -14,7 +14,7 @@ export const ChallengeResult = ({ day, success }) => {
   const proceedUrl =
     day === '7'
       ? '/challenge/no-meat/finish'
-      : `/challenge/no-meat/${Number(day) + 1}/check`;
+      : `/challenge/no-meat/${Number(day) + 1}`;
   const history = useHistory();
   const navigateToNextDay = () => history.push(proceedUrl);
   const navigateToInfo = () =>

@@ -1,12 +1,13 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import classNames from 'classnames';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
 import { Center } from '../../components/center/center';
 
+import infoEquals from '../../assets/infoEquals.png';
+import infoBreakdown from '../../assets/infoBreakdown.png';
 import styles from './challenge-detail.module.css';
 
 export const ChallengeDetail = () => {
@@ -17,19 +18,15 @@ export const ChallengeDetail = () => {
     <Container>
       <Center justifyContent="space-around">
         <h1 className={styles.heading}>No meat this week!</h1>
-        <div className={styles.bubble}>
-          <div className={styles.bubbleInner}>
-            <h3 className={classNames(styles.name, styles.nameOne)}>Anna</h3>
-            <h3 className={classNames(styles.name, styles.nameTwo)}>Lisa</h3>
-            <h3 className={classNames(styles.name, styles.nameThree)}>Tim</h3>
-          </div>
-        </div>
-        <h2>Eat no fish, no beef, no chicken for a week!</h2>
-        <Typography component="p" paragraph={true}>
-          Meat is the largest part of CO2 emissions of our food. By not eating
-          meat for a week, your carbon footprint would be reduced by 20% (500g
-          CO2-eq).
+        <Typography component="p" align="center" paragraph={true}>
+          Meat is the largest source of CO₂ in our daily diet.
+          By not eating meat for a week, you can save up to 12kg CO₂eq.
         </Typography>
+        <img className={styles.centerImage} src={infoEquals} alt="Comparision of Meat and Car drive CO2 Emissions" width="300px" />
+        <Typography component="p" align="center" paragraph={true}>
+        1kg Meat requires up to 20.000L freshwater and during the production 11kg CO₂eq are emitted.
+        </Typography>
+        <img className={styles.centerImage} src={infoBreakdown} alt="Breakdown of Food Emissions" width="100%" />
         <Button
           variant="outlined"
           color="primary"

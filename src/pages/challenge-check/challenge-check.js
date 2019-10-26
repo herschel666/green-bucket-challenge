@@ -21,7 +21,7 @@ export const ChallengeCheck = ({ match }) => {
       <Center justifyContent="space-around">
         <h1 className={styles.heading}>No meat this week!</h1>
         <div>
-          <h2 className={styles.subHeading}>Day {match.params.day} from 7.</h2>
+          <h2 className={styles.subHeading}>Day {match.params.day} of 7</h2>
           <h2 className={styles.subHeading}>
             Eat no fish, no beef, no chicken for a week!
           </h2>

@@ -7,7 +7,15 @@ import Button from '@material-ui/core/Button';
 
 import { Center } from '../../components/center/center';
 
+import day0 from '../../assets/day0.png';
+import day1 from '../../assets/day1.png';
+import day2 from '../../assets/day2.png';
+import day3 from '../../assets/day3.png';
+import day4 from '../../assets/day4.png';
+import day5 from '../../assets/day5.png';
 import styles from './challenge-progress.module.css';
+
+const graphs = [day0, day1, day2, day3, day4, day5, day5, day5];
 
 export const ChallengeProgress = ({ match }) => {
   const history = useHistory();
@@ -22,8 +30,10 @@ export const ChallengeProgress = ({ match }) => {
     <Container>
       <Center justifyContent="space-around">
         <h1 className={styles.heading}>No meat this week!</h1>
-        <h2 className={styles.subHeading}>Day {match.params.day} from 7.</h2>
-        <div className={styles.graph}></div>
+        <h2 className={styles.subHeading}>Day {match.params.day} of 7</h2>
+        <div className={styles.graph}>
+          <img src={graphs[match.params.day]} width="100%" />
+        </div>
         <div>
           <Button
             variant="outlined"
