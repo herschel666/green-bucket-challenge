@@ -18,6 +18,7 @@ import { ChallengeInfo } from './pages/challenge-info/challenge-info';
 import { ChallengeCheck } from './pages/challenge-check/challenge-check';
 import { ChallengeResult } from './pages/challenge-result/challenge-result';
 import { ChallengeFinish } from './pages/challenge-finish/challenge-finish';
+import { Profile } from './pages/profile/profile';
 
 function App() {
   return (
@@ -77,6 +78,7 @@ function App() {
               <ChallengeResult day={match.params.day} success={false} />
             )}
           />
+          <Route path="/profile/anna" exact={true} component={Profile} />
           <Redirect from="/" to="/login" exact={true} />
         </Switch>
       </Router>
