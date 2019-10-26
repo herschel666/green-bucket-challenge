@@ -15,7 +15,7 @@ import day4 from '../../assets/day4.png';
 import day5 from '../../assets/day5.png';
 import styles from './challenge-progress.module.css';
 
-const graphs = [day0, day1, day2, day3, day4, day5, day5, day5];
+const graphs = [day0, day0, day1, day2, day3, day4, day5, day5, day5];
 
 export const ChallengeProgress = ({ match }) => {
   const history = useHistory();

@@ -26,7 +26,7 @@ export const ChallengeResult = ({ day, success }) => {
   const emoji = success ? '🚀' : '👻';
   const heading = success ? 'Awesome' : 'Not your day';
   const text = success
-    ? 'You saved 300g CO2 today! (in comparison to the average Hamburg person)'
+    ? 'You saved 800g CO2 today! (in comparison to the average Hamburg person)'
     : 'You probably found good reasons, but the challenge is not to eat any meat! Try harder tomorrow.';
   const proceedLabel = success ? `I'm sustainable` : 'Sorry';
 

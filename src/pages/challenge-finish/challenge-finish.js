@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button';
 
 import { Center } from '../../components/center/center';
 
+import finish from '../../assets/finish.png';
 import styles from './challenge-finish.module.css';
 
 export const ChallengeFinish = () => {
@@ -19,7 +20,9 @@ export const ChallengeFinish = () => {
       <Center justifyContent="space-around">
         <h1 className={styles.heading}>No meat this week!</h1>
         <h2 className={styles.subHeading}>Challenge over!</h2>
-        <div className={styles.graph}></div>
+        <div className={styles.graph}>
+          <img src={finish} width="100%" />
+        </div>
         <div>
           <Button
             variant="outlined"

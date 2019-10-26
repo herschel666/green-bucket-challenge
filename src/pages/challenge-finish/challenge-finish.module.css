@@ -4,25 +4,12 @@
 }
 
 .subHeading {
-  margin-bottom: 2rem;
+  padding: 0;
+  margin: 0;
 }
 
 .graph {
-  position: relative;
-  width: 90%;
-  height: 0;
-  overflow: hidden;
-  padding-top: 90%;
   margin: 1rem auto;
-  background-color: var(--grey-300);
-}
-
-.graph::before {
-  display: block;
-  content: 'Insert Graph Here…!';
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
 }
 
 /* MUI's own CSS has has a slightly higher specificity... */
