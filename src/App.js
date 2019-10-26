@@ -16,6 +16,7 @@ import { ChallengeDetail } from './pages/challenge-detail/challenge-detail';
 import { ChallengeProgress } from './pages/challenge-progress/challenge-progress';
 import { ChallengeInfo } from './pages/challenge-info/challenge-info';
 import { ChallengeCheck } from './pages/challenge-check/challenge-check';
+import { ChallengeResult } from './pages/challenge-result/challenge-result';
 
 function App() {
   return (
@@ -55,6 +56,20 @@ function App() {
             path="/challenge/no-meat/:day/check"
             exact={true}
             component={ChallengeCheck}
+          />
+          <Route
+            path="/challenge/no-meat/:day/success"
+            exact={true}
+            render={({ match }) => (
+              <ChallengeResult day={match.params.day} success={true} />
+            )}
+          />
+          <Route
+            path="/challenge/no-meat/:day/almost"
+            exact={true}
+            render={({ match }) => (
+              <ChallengeResult day={match.params.day} success={false} />
+            )}
           />
           <Redirect from="/" to="/login" exact={true} />
         </Switch>

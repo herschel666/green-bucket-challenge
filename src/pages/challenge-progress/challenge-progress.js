@@ -14,7 +14,9 @@ export const ChallengeProgress = ({ match }) => {
   const navigateToCheck = () =>
     history.push(`/challenge/no-meat/${match.params.day}/check`);
   const navigateToInfo = () =>
-    history.push(`/challenge/no-meat/info?day=${match.params.day}`);
+    history.push(
+      `/challenge/no-meat/info?day=${match.params.day}&step=progress`
+    );
 
   return (
     <Container>

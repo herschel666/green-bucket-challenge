@@ -9,11 +9,28 @@ import { Center } from '../../components/center/center';
 
 import styles from './challenge-info.module.css';
 
+const getBackUrl = (params) => {
+  const day = params.get('day');
+  const step = params.get('step');
+
+  switch (step) {
+    case 'progress': {
+      return `/challenge/no-meat/${day}`;
+    }
+    case 'success':
+    case 'almost': {
+      return `/challenge/no-meat/${day}/${step}`;
+    }
+    default: {
+      throw Error(`Unknow challenge step "${step}".`);
+    }
+  }
+};
+
 export const ChallengeInfo = ({ location }) => {
   const params = new URLSearchParams(location.search);
   const history = useHistory();
-  const navigate = () =>
-    history.push(`/challenge/no-meat/${params.get('day')}`);
+  const navigate = () => history.push(getBackUrl(params));
 
   return (
     <Container>

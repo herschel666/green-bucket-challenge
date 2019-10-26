@@ -1,0 +1,24 @@
+.heading {
+  text-align: center;
+}
+
+.emoji {
+  display: block;
+  font-size: 12rem;
+  margin: 2rem auto;
+}
+
+/* MUI's own CSS has has a slightly higher specificity... */
+.button.button {
+  margin: 0.5rem 0;
+}
+
+/* MUI's own CSS has has a slightly higher specificity... */
+.buttonProceed.buttonProceed {
+  font-size: 1.25rem;
+}
+
+/* MUI's own CSS has has a slightly higher specificity... */
+.buttonInfo.buttonInfo {
+  color: var(--grey-600);
+}
