@@ -17,6 +17,7 @@ import { ChallengeProgress } from './pages/challenge-progress/challenge-progress
 import { ChallengeInfo } from './pages/challenge-info/challenge-info';
 import { ChallengeCheck } from './pages/challenge-check/challenge-check';
 import { ChallengeResult } from './pages/challenge-result/challenge-result';
+import { ChallengeFinish } from './pages/challenge-finish/challenge-finish';
 
 function App() {
   return (
@@ -46,6 +47,11 @@ function App() {
             path="/challenge/no-meat/info"
             exact={true}
             component={ChallengeInfo}
+          />
+          <Route
+            path="/challenge/no-meat/finish"
+            exact={true}
+            component={ChallengeFinish}
           />
           <Route
             path="/challenge/no-meat/:day"

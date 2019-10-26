@@ -14,6 +14,9 @@ const getBackUrl = (params) => {
   const step = params.get('step');
 
   switch (step) {
+    case 'finish': {
+      return '/challenge/no-meat/finish';
+    }
     case 'progress': {
       return `/challenge/no-meat/${day}`;
     }
